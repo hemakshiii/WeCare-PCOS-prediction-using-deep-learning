@@ -1,9 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
 import numpy as np
 import pickle
-from flask_bootstrap import Bootstrap4
+# from flask_bootstrap import Bootstrap4
 app = Flask(__name__)
-Bootstrap4(app)
+# Bootstrap4(app)
 with open("modal/PCOSS.pkl", "rb") as f:
     loaded_model = pickle.load(f)
 

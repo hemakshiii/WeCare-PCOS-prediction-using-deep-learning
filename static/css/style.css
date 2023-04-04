@@ -321,7 +321,10 @@ button{
     height: 650px;
     margin-bottom: 100px;
 }
-
+form .form_details .col-md-3 .form-label:after {
+    content:" *";
+    color: red;
+  }
 /* .test_wrapper .col-lg-9 button{
     display: flex;
     flex: left;
@@ -513,7 +516,7 @@ form .form_details .col-md-3 .form-control{
     height: auto;
     width: 100%;
     min-height: 650px;
-    background-image: url(./Images/Normal.png);
+    background-image: url(../Images/Normal.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
