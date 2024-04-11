@@ -1,0 +1,14 @@
+How to push porjects in github large one:
+
+1. In terminal type gitinit
+2. git add .
+3. git commit -m "first commit"
+4. Add 3 command from github repo it will get in suggestion when you are creating
+
+
+How to clone project from github:
+
+1. take a unique link from the project >code>link
+2. open git bash from the folder you want to clone it in the folder
+3. add command "git clone" then add unique link
+

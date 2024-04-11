@@ -19,7 +19,8 @@
 
   <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
 
-  <title>WeCare</title>
+  <title>WeCare | Remedy</title>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
@@ -29,7 +30,7 @@
     <nav class="navbar navbar-expand-lg sticky-top"
       style="background: linear-gradient(to bottom right, rgb(78, 4, 78), rgb(12, 12, 90), rgb(104, 45, 71));;">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
           <img src="{{url_for('static', filename= 'Images/logo1.png' )}}" class="img-fluid" alt="logo">
           <h2>WeCare</h2>
         </a>
@@ -66,13 +67,12 @@
 
 
   <section id="remedy" class="remedy_wrapper">
-    <!-- <div class="container-fluid"> -->
-
+    <!-- <div class="container-fluid border"> -->
+    <!-- <div class="row justify-content-between align-items-end"> -->
     <div class="container-fluid p-4">
-      <div class="row justify-content-lg-end justify-content-md-between align-items-center">
+      <div class="row justify-content-lg-end justify-content-md-between align-items-lg-end">
 
-        <div class=" col-lg-8 pe-lg-5 text-lg-end text-center text-md-start justify-content-end "
-          style="justify-items: right;">
+        <div class=" col-lg-8 pe-lg-5 text-lg-end text-center text-md-start justify-content-center ">
           <h3 style="color: rgb(63, 38, 128);">Here are some <b>remedies </b><br> to overcome <b>PCOS</b></h3>
 
           <div class="pt-2 ">
@@ -97,141 +97,180 @@
 
             <div class="tab-content" id="pills-tabContent">
 
-              <div class="tab-pane fade show active p-2 mt-3" id="pills-food" role="tabpanel"
+              <div class="tab-pane fade show active mt-3" id="pills-food" role="tabpanel"
                 aria-labelledby="pills-food-tab" tabindex="0">
-                <div class="container">
+                <!-- <div class="container-fluid p-4 border"> -->
+                <!-- <div class="row" style="overflow-y: scroll; overflow-x: scroll;" > -->
 
-                  <div class="row " style="height: 600px; width: 900px; overflow: auto;">
+                <div class="container-fluid justify-content-between align-items-center"
+                  style="height: 600px; width: 900px; overflow: auto;">
 
-                    <div class="col-lg-4 col-md-4 mb-4 ">
-                      <div class="card">
-                        <div class="card-body text-md-start text-center ">
-                          <!-- <img src="./Images/service-3.svg" class="img-fluid mb-4" alt=""> -->
-                          <h6><b style="color: rgb(195, 105, 255);">Eat</b> Berries</h6>
-                          <p>Ex. strawberries, blueberries</p>
+                  <div class="row ">
+
+                    <!-- <div class="col-lg-4 col-md-4 mb-4 "> -->
+                    <div class="col-lg-4 col-md-6 mb-4 ">
+                      <a href="https://indianexpress.com/article/lifestyle/health/berries-can-be-good-in-pcos-7988335/"
+                        target="_blank">
+                        <div class="card ">
+                          <div class="card-body text-md-start text-center overflow-auto">
+                            <!-- <img src="./Images/service-3.svg" class="img-fluid mb-4" alt=""> -->
+                            <h6><b style="color: rgb(195, 105, 255);">Eat</b> Berries</h6>
+                            <p>Ex. strawberries, blueberries</p>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
 
 
                     <div class="col-lg-4 col-md-6 mb-4 ">
-                      <div class="card">
-                        <div class="card-body text-md-start text-center overflow-auto">
-                          <!-- <img src="./Images/service-2.svg" class="img-fluid mb-4" alt=""> -->
-                          <h6><b style="color: rgb(195, 105, 255);">Eat</b> Leafy greens</h6>
-                          <p>Ex. spinach, kale, and artichokes</p>
+                      <a href="https://www.healthline.com/nutrition/leafy-green-vegetables" target="_blank">
+                        <div class="card">
+                          <div class="card-body text-md-start text-center overflow-auto">
+                            <!-- <img src="./Images/service-2.svg" class="img-fluid mb-4" alt=""> -->
+                            <h6><b style="color: rgb(195, 105, 255);">Eat</b> Leafy greens</h6>
+                            <p>Ex. spinach, kale, and methi</p>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mb-4">
-                      <div class="card">
-                        <div class="card-body text-md-start text-center overflow-auto">
-                          <!-- <img src="./Images/service-1.svg" class="img-fluid mb-4" alt=""> -->
-                          <h6><b style="color: rgb(195, 105, 255);">Eat</b> Fatty fish</h6>
-                          <p>Ex. tuna, sardines, mackerel, and salmon</p>
+                      <a href="https://www.healthline.com/health/food-nutrition/11-best-fish-to-eat" target="_blank">
+                        <div class="card">
+                          <div class="card-body text-md-start text-center overflow-auto ">
+                            <!-- <img src="./Images/service-1.svg" class="img-fluid mb-4" alt=""> -->
+                            <h6><b style="color: rgb(195, 105, 255);">Eat</b> Fatty fish</h6>
+                            <p>Ex. tuna, sardines, mackerel, and salmon</p>
+                          </div>
                         </div>
-                      </div>
+                      </a>
+
                     </div>
 
                     <div class="col-lg-4 col-md-6 mb-4">
-                      <div class="card">
-                        <div class="card-body text-md-start text-center overflow-auto">
-                          <!-- <img src="./Images/service-4.svg" class="img-fluid mb-4" alt=""> -->
-                          <h6><b style="color: rgb(195, 105, 255);">avoid</b> Refined carbohydrate sources</h6>
-                          <p>Ex. cakes, pastries and white bread</p>
+                      <a href="https://www.stylecraze.com/articles/list-of-refined-carbs/" target="_blank">
+                        <div class="card">
+                          <div class="card-body text-md-start text-center overflow-auto">
+                            <!-- <img src="./Images/service-4.svg" class="img-fluid mb-4" alt=""> -->
+                            <h6><b style="color: rgb(195, 105, 255);">avoid</b> Refined carbohydrate sources</h6>
+                            <p>Ex. cakes, pastries and white bread</p>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mb-4">
-                      <div class="card">
-                        <div class="card-body text-md-start text-center overflow-auto">
-                          <!-- <img src="./Images/service-2.svg" class="img-fluid mb-4" alt=""> -->
-                          <h6><b style="color: rgb(195, 105, 255);">avoid</b> Fried food and fast food </h6>
-                          <p>Ex. pizza and burgers</p>
+                      <a href="https://www.stylecraze.com/articles/list-of-refined-carbs/" target="_blank">
+                        <div class="card">
+                          <div class="card-body text-md-start text-center overflow-auto">
+                            <!-- <img src="./Images/service-2.svg" class="img-fluid mb-4" alt=""> -->
+                            <h6><b style="color: rgb(195, 105, 255);">avoid</b> Fried food and fast food </h6>
+                            <p>Ex. pizza and burgers</p>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mb-4">
-                      <div class="card">
-                        <div class="card-body text-md-start text-center overflow-auto">
-                          <!-- <img src="./Images/service-2.svg" class="img-fluid mb-4" alt=""> -->
-                          <h6><b style="color: rgb(195, 105, 255);">avoid</b> Carbonated beverages</h6>
-                          <p>Ex. sodas and energy drinks</p>
+                      <a href="https://www.medicalnewstoday.com/articles/dehydrating-drinks" target="_blank">
+                        <div class="card">
+                          <div class="card-body text-md-start text-center overflow-auto">
+                            <!-- <img src="./Images/service-2.svg" class="img-fluid mb-4" alt=""> -->
+                            <h6><b style="color: rgb(195, 105, 255);">avoid</b> Carbonated beverages</h6>
+                            <p>Ex. sodas and energy drinks</p>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
+
                   </div>
-
                 </div>
-
-
               </div>
 
               <div class="tab-pane fade p-3 mt-3" id="pills-exe" role="tabpanel" aria-labelledby="pills-exe-tab">
 
-                <div class="row " style="height: 600px; width: 900px; overflow: auto;">
+                <div class="row justify-content-sm-between align-items-center"
+                  style="height: 600px; width: 900px; overflow: auto;">
 
                   <div class="col-lg-4 col-md-4 mb-4 ">
-                    <div class="card">
-                      <div class="card-body text-md-start text-center ">
-                        <h6><b style="color: rgb(195, 105, 255);">EXERCISE-</b> CARDIO</h6>
-                        <p>For reducing insulin resistance, boosting fertility, stabilising mood</p>
+                    <a href="https://i.pinimg.com/originals/21/1c/d4/211cd433c0f5838fb11379c0d514bdbb.png"
+                      target="_blank">
+                      <div class="card">
+                        <div class="card-body text-md-start text-center ">
+                          <!-- <img src="./Images/service-3.svg" class="img-fluid mb-4" alt=""> -->
+                          <h6><b style="color: rgb(195, 105, 255);">EXERCISE-</b> CARDIO</h6>
+                          <p>For reducing insulin resistance, boosting fertility, stabilising mood</p>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
-
 
                   <div class="col-lg-4 col-md-6 mb-4 ">
-                    <div class="card">
-                      <div class="card-body text-md-start text-center overflow-auto">
-                        <!-- <img src="./Images/service-2.svg" class="img-fluid mb-4" alt=""> -->
-                        <h6><b style="color: rgb(195, 105, 255);">EXERCISE-</b> STRENGTH TRAINING</h6>
-                        <p>For reducing insulin resistance, increasing metabolic rate & body composition</p>
+                    <a href="https://i.pinimg.com/originals/4f/3e/49/4f3e4992f4bf1be4340da0692935da0d.jpg"
+                      target="_blank">
+                      <div class="card">
+                        <div class="card-body text-md-start text-center overflow-auto">
+                          <!-- <img src="./Images/service-2.svg" class="img-fluid mb-4" alt=""> -->
+                          <h6><b style="color: rgb(195, 105, 255);">EXERCISE-</b> STRENGTH TRAINING</h6>
+                          <p>For reducing insulin resistance, increasing metabolic rate & body composition</p>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
 
                   <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                      <div class="card-body text-md-start text-center overflow-auto">
-                        <!-- <img src="./Images/service-1.svg" class="img-fluid mb-4" alt=""> -->
-                        <h6><b style="color: rgb(195, 105, 255);">EXERCISE-</b> HIGH INTENSITY INTERVAL TRAINING</h6>
-                        <p>For increasing cardiovascular fitness & decreasing waist.</p>
+                    <a href="https://i.pinimg.com/474x/9b/f1/c1/9bf1c18e12cfba2de77a08a8c9142f9d.jpg" target="_blank">
+                      <div class="card">
+                        <div class="card-body text-md-start text-center overflow-auto">
+                          <!-- <img src="./Images/service-1.svg" class="img-fluid mb-4" alt=""> -->
+                          <h6><b style="color: rgb(195, 105, 255);">EXERCISE-</b> HIGH INTENSITY INTERVAL TRAINING
+                          </h6>
+                          <p>For increasing cardiovascular fitness & decreasing waist.</p>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
 
                   <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                      <div class="card-body text-md-start text-center overflow-auto">
-                        <!-- <img src="./Images/service-4.svg" class="img-fluid mb-4" alt=""> -->
-                        <h6><b style="color: rgb(195, 105, 255);">yoga-</b> Malasana</h6>
-                        <p>Strengthen the pelvic floor & abdominal core while opening the hips.</p>
+                    <a href="https://i.pinimg.com/736x/ea/6a/80/ea6a80060f9cddc0754fd02a9a10e08b.jpg" target="_blank">
+                      <div class="card">
+                        <div class="card-body text-md-start text-center overflow-auto">
+                          <!-- <img src="./Images/service-4.svg" class="img-fluid mb-4" alt=""> -->
+                          <h6><b style="color: rgb(195, 105, 255);">yoga-</b> Malasana</h6>
+                          <p>Strengthen the pelvic floor & abdominal core while opening the hips.</p>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
 
                   <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                      <div class="card-body text-md-start text-center overflow-auto">
-                        <!-- <img src="./Images/service-2.svg" class="img-fluid mb-4" alt=""> -->
-                        <h6><b style="color: rgb(195, 105, 255);">yoga-</b> Setu Bandhasana</h6>
-                        <p>Calm the brain and reduce stress & anxiety while relieving tension in the back muscles.</p>
+                    <a href="https://i.pinimg.com/originals/ea/60/2a/ea602ac81152c4dece20e0e813dfd1c3.jpg"
+                      target="_blank">
+                      <div class="card">
+                        <div class="card-body text-md-start text-center overflow-auto">
+                          <!-- <img src="./Images/service-2.svg" class="img-fluid mb-4" alt=""> -->
+                          <h6><b style="color: rgb(195, 105, 255);">yoga-</b> Setu Bandhasana</h6>
+                          <p>Calm the brain and reduce stress & anxiety while relieving tension in the back muscles.
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
 
                   <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                      <div class="card-body text-md-start text-center overflow-auto">
-                        <h6><b style="color: rgb(195, 105, 255);">yoga-</b> Dhanurasana</h6>
-                        <p>Help relieve menstrual discomfort, stimulate reproductive organs & regulate menstrual flow.</p>
+                    <a href="https://www.elenamissyoga.com/wp-content/uploads/2019/01/10-Bow-pose-1024x1024.jpg"
+                      target="_blank">
+                      <div class="card">
+                        <div class="card-body text-md-start text-center overflow-auto">
+                          <!-- <img src="./Images/service-2.svg" class="img-fluid mb-4" alt=""> -->
+                          <h6><b style="color: rgb(195, 105, 255);">yoga-</b> Dhanurasana</h6>
+                          <p>Help relieve menstrual discomfort, stimulate reproductive organs & regulate menstrual
+                            flow.
+                          </p>
+                        </div>
                       </div>
-                    </div>
                   </div>
+                  </a>
                 </div>
 
               </div>
@@ -240,16 +279,8 @@
           </div>
         </div>
       </div>
-    </div>
+
   </section>
-
-
-
-
-
-
-
-
 
 
   <section id="#footer" class="footer_wrapper mt-3 mt-md-0">
@@ -259,7 +290,7 @@
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
 
           <div class=" col-lg-3 col-md-4 d-flex align-items-center">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
               <img src="{{url_for('static', filename= 'Images/logo1.png' )}}" class="img-fluid" alt="logo">
               <h2>WeCare</h2>
             </a>
